@@ -11,8 +11,13 @@ body{
     padding: 0;
     
 }
+h1{
+  font-family: odin_font, Arial, Helvetica, sans-serif;
+}
 .boddy{
     display: flex;
+    justify-content: center;
+    height: fit-content;
 }
 .content{
     width: 80%;
@@ -20,8 +25,12 @@ body{
 .odin-logo-container {
     position: relative;
     background-image: url(./images/background.avif);
-
+    background-size: cover;
     width: 20%;
+  }
+  .odin_logo_text{
+    margin-top: 10%;
+    margin-left: 2px;
   }
   
   .odin-logo-overlay {
@@ -44,7 +53,7 @@ body{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    width: clamp(500px,100%);
   }
   .form-group {
     display: flex;
@@ -79,6 +88,7 @@ body{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    width: 150px;
     cursor: pointer;
   }
   
@@ -89,6 +99,11 @@ body{
   a {
     color: var(--button_color);
     text-decoration: none;
+    
+  }
+  .div_button, .text{
+    margin-top: 25px;
+    margin-left: 25px;
   }
  
   input[type="password"]:invalid {
